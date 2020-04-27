@@ -5,7 +5,7 @@ pipeline {
         maven 'mvn-3.6.3'
         }
 
-    stags {
+    stages {
         stage('Build') {
             steps {
             sh "mvn clean package script-boot:repackage"
